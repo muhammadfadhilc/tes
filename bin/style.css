@@ -1,0 +1,46 @@
+.feature-list {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 1rem;
+    gap: 1rem;
+}
+
+.feature {
+    background: #f3f3d3;
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(to right, #e15611, #f6e7d8);
+    background-color: aqua;
+    color: white;
+    font-size: 2rem;
+    padding: 2rem;
+    flex-grow: 1;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 0 3rem;
+}
+
+.gallery .item {
+    background: #d10606;
+    height: 250px;
+    border-radius: 8px;
+}
+
+@media(max-width: 600px) {
+    .hero {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    .feature-list{
+        flex-direction: column;
+    }
+}
